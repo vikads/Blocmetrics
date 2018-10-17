@@ -1,6 +1,6 @@
-== Blocmetrics
+## Blocmetrics
 
-##An analytics service to track events on websites.
+## An analytics service to track events on websites.
 
 
 * A client-side JavaScript snippet that allows a user to track events on their website.
