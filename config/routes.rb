@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
 
   devise_for :users
-  
+
+  resources :users do
+    resources :registeredapps
+  end
+
   get 'welcome/index'
 
   root 'welcome#about'

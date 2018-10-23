@@ -15,6 +15,8 @@ class User < ActiveRecord::Base
   #to add case insensitivity to your validations on :username
   validates :username, presence: :true, uniqueness: { case_sensitive: false }
 
+  has_many :registeredapps
+
   def self.find_first_by_auth_conditions(warden_conditions)
     # binding.pry
     conditions = warden_conditions.dup
