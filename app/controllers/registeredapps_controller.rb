@@ -27,6 +27,8 @@ class RegisteredappsController < ApplicationController
   def show
     @registeredapp = Registeredapp.find(params[:id])
     @user = User.find_by(id: session[:user_id])
+    @events = @registeredapp.events
+    # @events = @registeredapp.events.group_by(&:name)
     # unless @registeredapp.user == current_user
     #   flash[:alert] = "You can not see this app."
     #   redirect_to registeredapp_path
