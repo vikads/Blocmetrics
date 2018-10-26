@@ -2,20 +2,6 @@
 
 <div class="row">
   <div class="col-md-8">
-    <%= form_for @registeredapp do |f| %>
-      <div class="form-group">
-        <%= f.label :name %>
-        <%= f.text_field :name, class: 'form-control', placeholder: "App's name" %>
-      </div>
-
-      <div class="form-group">
-        <%= f.label :url %>
-        <%= f.text_area :url, class: 'form-control', placeholder: "App's URL" %>
-      </div>
-
-      <div class="form-group">
-        <%= f.submit "Save", class: 'btn btn-success' %>
-      </div>
-    <% end %>
+    <%= render partial: 'form', locals: { registeredapp: @registeredapp} %>
   </div>
 </div>
