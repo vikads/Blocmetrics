@@ -14,17 +14,19 @@
     <ul class="nav nav-tabs">
       <li><%= link_to "Blocmetrics", root_path %></li>
       <li><%= link_to "Index", welcome_index_path %></li>
+      <li><%= link_to "Registered Apps", registeredapps_path %></li>
 
 
       <div class="pull-right user-info">
 
       <% if user_signed_in? %>
+        
         <div class="pull-right">
-          <!-- current_user.email -->
           Signed in as: <strong><%= current_user.username %></strong> |
           <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> -
           <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
         </div>
+        
       <% else %>
         <%= link_to "Sign Up", new_user_registration_path, :class => 'navbar-link'  %> -
         <%= link_to "Sign In", new_user_session_path, :class => 'navbar-link'  %>
