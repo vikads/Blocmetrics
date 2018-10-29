@@ -17,5 +17,5 @@
 
 #allows to use API as the namespace
 ActiveSupport::Inflector.inflections(:en) do |inflect|
-  inflect.acronym 'API'
+  inflect.acronym 'API' #This allows to use API as the namespace, insted of the non-acronymed Api namespace
 end
