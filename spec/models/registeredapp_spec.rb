@@ -21,4 +21,5 @@ RSpec.describe Registeredapp, type: :model do
       expect(registeredapp).to have_attributes(name: "Bloc", url: "https://bloc.io")
     end
   end
+
 end
