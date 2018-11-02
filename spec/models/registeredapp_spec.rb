@@ -2,6 +2,7 @@ require 'rails_helper'
 
 RSpec.describe Registeredapp, type: :model do
 
+
   let(:user) { User.create!(username: "Username", email: "username@bloc.io", password: "password") }
   let(:registeredapp) { Registeredapp.create!{name: "Bloc", url: "https://bloc.io"} }
 
@@ -21,4 +22,5 @@ RSpec.describe Registeredapp, type: :model do
       expect(registeredapp).to have_attributes(name: "Bloc", url: "https://bloc.io")
     end
   end
+
 end

@@ -31,8 +31,9 @@ class RegisteredappsController < ApplicationController
       flash[:alert] = "You can not see this app."
       redirect_to registeredapps_path
     end
-    
+  
     @events = @registeredapp.events
+
   end
 
 
