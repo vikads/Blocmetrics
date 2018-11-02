@@ -33,6 +33,7 @@ class RegisteredappsController < ApplicationController
     end
 
     @events = @registeredapp.events
+
   end
 
 

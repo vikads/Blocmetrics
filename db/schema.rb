@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20181025200456) do
 
 ActiveRecord::Schema.define(version: 20181023002635) do
 
+
   create_table "registeredapps", force: :cascade do |t|
     t.string   "name"
     t.string   "url"
