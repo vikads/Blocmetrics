@@ -15,6 +15,14 @@
 
     <div class="col-md-8">
       <h4> URL: <%= link_to @registeredapp.url, "#{@registeredapp.url}"  %> </h4> <br>
+
+      <h5>The number of associated events <strong><%= @events.count %></strong>.</h5>
+      <p>
+        <% @events.group_by(&:name).each do | name, event | %>
+          <hr><%= name %></hr>
+        <% end %>
+      </p>
+
     </div>
 
     <div class="col-md-2">

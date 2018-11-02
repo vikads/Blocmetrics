@@ -26,10 +26,14 @@ class RegisteredappsController < ApplicationController
 
   def show
     @registeredapp = Registeredapp.find(params[:id])
+
     unless @registeredapp.user == current_user
       flash[:alert] = "You can not see this app."
       redirect_to registeredapps_path
     end
+  
+    @events = @registeredapp.events
+
   end
 
 
