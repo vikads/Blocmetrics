@@ -2,7 +2,6 @@ require 'rails_helper'
 
 RSpec.describe Registeredapp, type: :model do
 
-
   let(:user) { User.create!(username: "Username", email: "username@bloc.io", password: "password") }
   let(:registeredapp) { Registeredapp.create!{name: "Bloc", url: "https://bloc.io"} }
 

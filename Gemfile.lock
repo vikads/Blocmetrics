@@ -214,6 +214,7 @@ GEM
 
 PLATFORMS
   ruby
+  unknown
 
 DEPENDENCIES
   bootstrap-sass
@@ -241,4 +242,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.16.4
+   1.17.0.pre.2
