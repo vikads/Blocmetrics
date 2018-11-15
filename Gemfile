@@ -36,7 +36,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'figaro'
 gem 'devise'
-
+gem 'chartkick'
+gem 'groupdate'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
